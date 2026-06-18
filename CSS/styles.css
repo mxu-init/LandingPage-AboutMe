@@ -17,6 +17,14 @@ h2 {color: white;}
     padding: 10px 20px;
 }
 
+/* Prueba filas con display flex */
+
+.fila{
+    display: flex; /* Mirar cómo va lo del display flex exactamente */
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Menú */
 
 .menu {
