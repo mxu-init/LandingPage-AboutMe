@@ -25,7 +25,7 @@ div{
     border: 1px solid black;
 }
 
-/* Prueba filas con display flex */
+/* Prueba distribución filas/columnas con display flex */
 
 .row{
     display: flex; /* Mirar cómo va lo del display flex exactamente */
@@ -34,8 +34,10 @@ div{
 }
 
 .column{
+    display: flex;
     flex: 1;
-    text-align: center;
+    justify-content: center; /* Centra en el eje horizontal */
+    align-items: center; /* Centra en el eje vertical */
 }
 
 .column_red{
@@ -63,7 +65,6 @@ div{
 .yellow_background p {
     margin:0;
 }
-
 
 
 /* Prueba Menú */
