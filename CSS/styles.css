@@ -17,12 +17,24 @@ h2 {color: white;}
     padding: 10px 20px;
 }
 
+/* Poner divs con border solo para visualizar */
+div{
+    border: 1px solid black;
+}
+
+
 /* Prueba filas con display flex */
 
-.fila{
+
+.row{
     display: flex; /* Mirar cómo va lo del display flex exactamente */
     justify-content: space-between;
     align-items: center;
+}
+
+.column{
+    flex: 1;
+    text-align: center;
 }
 
 /* Menú */
