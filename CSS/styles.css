@@ -30,15 +30,34 @@ div{
 .row{
     display: flex; /* Mirar cómo va lo del display flex exactamente */
     justify-content: space-between;
-    align-items: stretch;
+    /* align-items: stretch; */ /* Por qué había puesto esto? */
 }
 
 .column{
     display: flex;
     flex: 1;
-    justify-content: center; /* Centra en el eje horizontal */
-    align-items: center; /* Centra en el eje vertical */
+    /* justify-content: center; */ /* Centra en el eje horizontal */
+   /* align-items: center; */ /*Centra en el eje vertical */
+    flex-direction: column;
+    gap: 10px;
 }
+.column_right{
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Centra en el eje horizontal */
+    align-items: center; /*Centra en el eje vertical */
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .column img{
+    justify-content: center;
+    width: 176px;
+    height: 176px;
+    max-width: none;
+    max-height: none;
+    flex-shrink: 0;
+} */
 
 .column_red{
     flex: 1;
