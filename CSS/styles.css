@@ -1,5 +1,5 @@
 
-h1 {color: rgb(38, 41, 218)}
+h1 {color: rgb(8, 8, 50)}
 h2 {color: white;}
 
 
@@ -14,14 +14,20 @@ h2 {color: white;}
 
 .header {
     width: 100%;
-    background-color: #131921;
+    background-color: #919fb0;
     padding: 10px 20px;
     text-align: center;
 }
 
 /* Poner divs con border solo para visualizar */
-div{
+/* div{
     border: 1px solid black;
+} */
+
+.center_container {
+    width: 85%;
+    margin: auto;
+    background-color: rgb(227, 224, 224);
 }
 
 /* Prueba distribución filas/columnas con display flex */
@@ -29,7 +35,7 @@ div{
 .row{
     display: flex; /* Mirar cómo va lo del display flex exactamente */
     justify-content: space-between;
-    /* align-items: stretch; */ /* Por qué había puesto esto? */
+    /* align-items: stretch; */ 
 }
 
 .column{
@@ -48,8 +54,8 @@ div{
 .column_right{
     display: flex;
     flex: 1;
-    justify-content: center; /* Centra en el eje horizontal */
-    align-items: center; /*Centra en el eje vertical */
+    justify-content: center;
+    align-items: center; 
     flex-direction: column;
     gap: 10px;
 }
@@ -67,12 +73,12 @@ div{
 .red_top, 
 .red_bottom{
     flex:1;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .yellow_background{
     
-    background-color: yellow;
+    /* background-color: yellow; */
     flex:1;
     display: flex;
     align-items: center;
@@ -83,27 +89,32 @@ div{
 .yellow_background p {
     margin:0;
 }
+#spanish_flag{
+    height: auto;
+    width: 200px;
+}
 
 
 /* Prueba Menú */
 
-#redes_sociales {
+#social {
     display: inline-block;
     width: 100%; 
     border: 1px solid black; 
     text-align: center; 
-    background-color: #232f3e;
+    background-color: #919fb0;;
     font-weight: bolder;
-    margin-top: 20px;
+    margin-top: 5px;
     color: white;
     padding: 10px;
+    border-bottom: none;
 }
 
 .menu {
     display: flex; /* Mirar cómo va lo del display flex exactamente */
     justify-content: space-between;
     align-items: center;
-    margin: 10px auto 0px;
+    margin:auto;
 
     /* max-width: 1000px;
     background-color: green; */
@@ -114,9 +125,9 @@ div{
 .item{
     flex: 1;
     text-align: center;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     padding: 12px 0; /* Primer valor: arriba-abajo. Segundo: Izquierda-derecha */
-    background-color: #232f3e;
+    background-color: #919fb0;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -124,7 +135,7 @@ div{
 }
 
 .item:hover {
-    background-color: red;
+    background-color: rgb(23, 62, 106);
     transform: translateY(-7px);
 
 }
