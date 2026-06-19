@@ -36,11 +36,16 @@ div{
 .column{
     display: flex;
     flex: 1;
-    /* justify-content: center; */ /* Centra en el eje horizontal */
-   /* align-items: center; */ /*Centra en el eje vertical */
+    justify-content: center;  /* Centra en el eje horizontal */
+    align-items: center;  /*Centra en el eje vertical */
     flex-direction: column;
     gap: 10px;
 }
+.column p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .column_right{
     display: flex;
     flex: 1;
@@ -50,14 +55,9 @@ div{
     gap: 10px;
 }
 
-/* .column img{
-    justify-content: center;
-    width: 176px;
-    height: 176px;
-    max-width: none;
-    max-height: none;
-    flex-shrink: 0;
-} */
+.column_right img{
+    height: 200px;
+}
 
 .column_red{
     flex: 1;
